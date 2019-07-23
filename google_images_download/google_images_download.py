@@ -511,7 +511,7 @@ class googleimagesdownload:
     def download_image_thumbnail(self,image_url,main_directory,dir_name,return_image_name,print_urls,socket_timeout,print_size,no_download,save_source,img_src,ignore_urls):
         if print_urls or no_download:
             print("Image URL: " + image_url)
-            file_url=open('file_url.txt','w')
+            file_url=open('~/bot_herobot_ls/file_url.txt','w')
             file_url.write(image_url)
             file_url.close()
         if no_download:
@@ -582,7 +582,7 @@ class googleimagesdownload:
         if not silent_mode:
             if print_urls or no_download:
                 print("Image URL: " + image_url)
-                file_url=open('file_url.txt','w')
+                file_url=open('~/bot_herobot_ls/file_url.txt','w')
                 file_url.write(image_url)
                 file_url.close()
         if ignore_urls:
